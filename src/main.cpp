@@ -10,8 +10,7 @@ int main() {
   while(app.isOpen()) {
     app.letsStart();
     
-    drawLine(-50, -50, 50, 50,
-             5, Color::green());
+    drawFillRect(0, 0, 100, 300, Color::blue());
   }
   
   return 0;

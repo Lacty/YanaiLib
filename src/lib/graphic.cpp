@@ -52,3 +52,32 @@ void drawLine(float start_x, float start_y,
   
   glDisableClientState(GL_VERTEX_ARRAY);
 }
+
+void drawRect(float pos_x, float pos_y, float width, float height,
+              float line_w, const Color& color)
+{
+  float top    = pos_y + height * 0.5f;
+  float bottom = pos_y - height * 0.5f;
+  float right  = pos_x + width * 0.5f;
+  float left   = pos_x - width * 0.5f;
+  
+  drawLine(left, top, right, top, line_w, color); // 上
+  drawLine(left, bottom, right, bottom, line_w, color); // 下
+  drawLine(right, top, right, bottom, line_w, color); // 右
+  drawLine(left, top, left, bottom, line_w, color); // 左
+}
+
+void drawFillRect(float pos_x, float pos_y, float width, float height,
+                  const Color& color)
+{
+  float top    = pos_y + height * 0.5f;
+  float bottom = pos_y - height * 0.5f;
+  float right  = pos_x + width * 0.5f;
+  float left   = pos_x - width * 0.5f;
+  
+  // 色を指定
+  glColor4f(color.r, color.g, color.b, 1.0f);
+  
+  // 描画
+  glRectf(left, bottom, right, top);
+}
