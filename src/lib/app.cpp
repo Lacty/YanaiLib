@@ -62,9 +62,23 @@ void App::windowSizeCallBack(GLFWwindow* window, int width, int height) {
   app->window_h_ = height;
 }
 
+void App::keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods) {
+  auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
+  
+  if (action == GLFW_PRESS) {
+    app->key_.setKeyPush(key);
+    app->key_.setKeyPress(key);
+  }
+  if (action == GLFW_RELEASE) {
+    app->key_.setKeyPull(key);
+    app->key_.popKeyPress(key);
+  }
+}
+
 void App::setCallBackFunc() {
   glfwSetCursorPosCallback(window_, mousePosCallBack);
   glfwSetWindowSizeCallback(window_, windowSizeCallBack);
+  glfwSetKeyCallback(window_, keyCallBack);
 }
 
 bool App::isOpen() {
@@ -89,6 +103,8 @@ void App::begin() {
 }
 
 void App::end() {
+  key_.frashInput();
+
   // バッファを切り替え
   glfwSwapBuffers(window_);
   
@@ -108,3 +124,8 @@ void App::setClearColor(const Color &color) {
 const Vec2d& App::mousePos() const {
   return mouse_pos_;
 }
+
+// Key Events
+bool App::isPushKey(int key)  { return key_.isPush(key); }
+bool App::isPullKey(int key)  { return key_.isPull(key); }
+bool App::isPressKey(int key) { return key_.isPress(key); }

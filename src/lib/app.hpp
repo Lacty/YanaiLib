@@ -5,6 +5,7 @@
 #include <Eigen/Core>
 #include "color.hpp"
 #include "graphic.hpp"
+#include "key.hpp"
 
 
 struct GLFWwindow;
@@ -24,11 +25,12 @@ private:
   // マウスの位置
   Vec2d mouse_pos_;
   
-  // マウスの位置を把握
-  static void mousePosCallBack(GLFWwindow* window, double xpos, double ypos);
+  Key key_;
   
-  // windowのサイズを把握
+  // CallBack関数
+  static void mousePosCallBack(GLFWwindow* window, double xpos, double ypos);
   static void windowSizeCallBack(GLFWwindow* window, int width, int height);
+  static void keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods);
   
   void setCallBackFunc();
 
@@ -58,4 +60,9 @@ public:
   
   // マウスの位置を取得
   const Vec2d& mousePos() const;
+  
+  // Key Events
+  bool isPushKey(int key);
+  bool isPullKey(int key);
+  bool isPressKey(int key);
 };

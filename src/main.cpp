@@ -10,7 +10,17 @@ int main() {
   while(app.isOpen()) {
     app.letsStart();
     
-    std::cout << app.mousePos() << std::endl;
+    if (app.isPushKey(KEY_W)) {
+      std::cout << "push w" << std::endl;
+    }
+    
+    if (app.isPressKey(KEY_S)) {
+      std::cout << "press s" << std::endl;
+    }
+    
+    if (app.isPullKey(KEY_D)) {
+      std::cout << "pull s" << std::endl;
+    }
   }
   
   return 0;
