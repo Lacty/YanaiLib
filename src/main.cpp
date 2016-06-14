@@ -9,6 +9,8 @@ int main() {
   
   while(app.isOpen()) {
     app.letsStart();
+    
+    drawPoint(0, 0, 10, Color::red());
   }
   
   return 0;

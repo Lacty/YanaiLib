@@ -3,58 +3,67 @@
 
 #include <cassert>
 
+#include <GLFW/glfw3.h>
+
 
 App::App(int width, int height, const char* title) :
 window_w_(width),
 window_h_(height)
 {
   // OpenGLの初期化に失敗した
-  assert(gl::glfwInit());
+  assert(glfwInit());
   
   // window作る
-  window_ = gl::glfwCreateWindow(window_w_, window_h_, title, NULL, NULL);
+  window_ = glfwCreateWindow(window_w_, window_h_, title, NULL, NULL);
   if (!window_) {
-    gl::glfwTerminate();
+    glfwTerminate();
     assert(!"window作れなかった");
   }
   
   // コンテキスト作る
-  gl::glfwMakeContextCurrent(window_);
+  glfwMakeContextCurrent(window_);
   
   // fpsを60に絞る
-  gl::glfwSwapInterval(1);
+  glfwSwapInterval(1);
   
   // 原点を画面の中央にする
-  gl::glViewport(0, 0, window_w_, window_h_);
-  gl::glOrtho(-window_w_ * 0.5f, window_w_ * 0.5f, -window_h_ * 0.5f, window_h_ * 0.5f, -0.0f, 1.0f);
+  glViewport(0, 0, window_w_, window_h_);
+  glOrtho(-window_w_ * 0.5f, window_w_ * 0.5f, -window_h_ * 0.5f, window_h_ * 0.5f, -0.0f, 1.0f);
 }
 
 App::~App() {
   // OpenGLの後片付け
-  gl::glfwTerminate();
+  glfwTerminate();
 }
 
 
 bool App::isOpen() {
   // windowが開いているかどうか
-  return !gl::glfwWindowShouldClose(window_);
+  return !glfwWindowShouldClose(window_);
 }
 
 void App::letsStart() {
-  // 背景色を設定
-  gl::glClearColor(clear_color_.r, clear_color_.g, clear_color_.b, 1.0f);
+  end();
+  begin();
+}
 
+void App::begin() {
+  // 背景色を設定
+  glClearColor(clear_color_.r, clear_color_.g, clear_color_.b, 1.0f);
+  
   // 画面のバッファを削除
-  gl::glClear(GL_COLOR_BUFFER_BIT);
+  glClear(GL_COLOR_BUFFER_BIT);
   
   // 色データを初期化
-  gl::glColor4f(1, 1, 1, 1);
-  
+  glColor4f(1, 1, 1, 1);
+}
+
+void App::end() {
   // バッファを切り替え
-  gl::glfwSwapBuffers(window_);
+  glfwSwapBuffers(window_);
   
   // 入力イベント受付
-  gl::glfwPollEvents();
+  glfwPollEvents();
 }
 
 void App::setClearColor(float r, float g, float b) {

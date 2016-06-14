@@ -36,6 +36,7 @@
 /* Begin PBXBuildFile section */
 		98AE71AD363E41968A3BA9F1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CE57BF206C849B9BE61A501 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		ACF08C711D10128A00AF673E /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C6F1D10128A00AF673E /* app.cpp */; };
+		ACF08C751D101D9D00AF673E /* graphic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C731D101D9D00AF673E /* graphic.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		ACF08C6F1D10128A00AF673E /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		ACF08C701D10128A00AF673E /* app.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
 		ACF08C721D10198100AF673E /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color.hpp; sourceTree = "<group>"; };
+		ACF08C731D101D9D00AF673E /* graphic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphic.cpp; sourceTree = "<group>"; };
+		ACF08C741D101D9D00AF673E /* graphic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = graphic.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -136,6 +139,8 @@
 		ACF08C6E1D10128A00AF673E /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				ACF08C731D101D9D00AF673E /* graphic.cpp */,
+				ACF08C741D101D9D00AF673E /* graphic.hpp */,
 				ACF08C721D10198100AF673E /* color.hpp */,
 				ACF08C6F1D10128A00AF673E /* app.cpp */,
 				ACF08C701D10128A00AF673E /* app.hpp */,
@@ -246,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98AE71AD363E41968A3BA9F1 /* main.cpp in Sources */,
+				ACF08C751D101D9D00AF673E /* graphic.cpp in Sources */,
 				ACF08C711D10128A00AF673E /* app.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

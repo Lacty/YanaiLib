@@ -2,17 +2,15 @@
 #pragma once
 
 #include <iostream>
-
-// 直接触れないように隠します
-namespace gl {
-#include <GLFW/glfw3.h>
-}
-
 #include "color.hpp"
+#include "graphic.hpp"
+
+
+struct GLFWwindow;
 
 class App {
 private:
-  gl::GLFWwindow* window_;
+  GLFWwindow* window_;
 
   Color clear_color_;
 
@@ -26,6 +24,9 @@ public:
   
   bool isOpen();
   void letsStart();
+  
+  void begin();
+  void end();
   
   void setClearColor(float r, float g, float b);
   void setClearColor(const Color& color);
