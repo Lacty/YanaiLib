@@ -42,12 +42,23 @@ App::~App() {
   glfwTerminate();
 }
 
+void App::mouseButtomCallback(GLFWwindow* window, int button, int action, int mods) {
+  auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
+  
+  if (action == GLFW_PRESS) {
+    app->mouse_.setButtonPush(button);
+    app->mouse_.setButtonPress(button);
+  }
+  if (action == GLFW_RELEASE) {
+    app->mouse_.setButtonPull(button);
+    app->mouse_.popButtonPress(button);
+  }
+}
 
 void App::mousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
   auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
   
-  app->mouse_pos_.x() = xpos - app->window_w_ * 0.5f;
-  app->mouse_pos_.y() = -1 * (ypos - app->window_h_ * 0.5f);
+  app->mouse_.setPos(xpos - app->window_w_ * 0.5f, -1 * (ypos - app->window_h_ * 0.5f));
 }
 
 void App::windowSizeCallBack(GLFWwindow* window, int width, int height) {
@@ -76,6 +87,7 @@ void App::keyCallBack(GLFWwindow* window, int key, int scancode, int action, int
 }
 
 void App::setCallBackFunc() {
+  glfwSetMouseButtonCallback(window_, mouseButtomCallback);
   glfwSetCursorPosCallback(window_, mousePosCallBack);
   glfwSetWindowSizeCallback(window_, windowSizeCallBack);
   glfwSetKeyCallback(window_, keyCallBack);
@@ -104,6 +116,7 @@ void App::begin() {
 
 void App::end() {
   key_.frashInput();
+  mouse_.frashInput();
 
   // バッファを切り替え
   glfwSwapBuffers(window_);
@@ -120,12 +133,19 @@ void App::setClearColor(const Color &color) {
   clear_color_ = color;
 }
 
-
-const Vec2d& App::mousePos() const {
-  return mouse_pos_;
-}
-
 // Key Events
 bool App::isPushKey(int key)  { return key_.isPush(key); }
 bool App::isPullKey(int key)  { return key_.isPull(key); }
 bool App::isPressKey(int key) { return key_.isPress(key); }
+
+// Mouse Events
+bool App::isPushMouse(int buttom)  { return mouse_.isPush(buttom); }
+bool App::isPullMouse(int buttom)  { return mouse_.isPull(buttom); }
+bool App::isPressMouse(int buttom) { return mouse_.isPress(buttom); }
+
+Vec2d App::mousePos() const { return mouse_.pos(); }
+
+void App::setMousePos(const Vec2d& pos) {
+  glfwSetCursorPos(window_, pos.x(), pos.y());
+  mouse_.setPos(pos.x(), pos.y());
+}

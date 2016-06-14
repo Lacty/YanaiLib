@@ -98,4 +98,5 @@ dependencies: /Users/yanai/Desktop/YanaiLib/src/main.cpp \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/src/Core/util/ReenableStupidWarnings.h \
   /Users/yanai/Desktop/YanaiLib/src/lib/color.hpp \
   /Users/yanai/Desktop/YanaiLib/src/lib/graphic.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/key.hpp
+  /Users/yanai/Desktop/YanaiLib/src/lib/key.hpp \
+  /Users/yanai/Desktop/YanaiLib/src/lib/mouse.hpp

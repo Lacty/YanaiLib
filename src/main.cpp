@@ -10,17 +10,7 @@ int main() {
   while(app.isOpen()) {
     app.letsStart();
     
-    if (app.isPushKey(KEY_W)) {
-      std::cout << "push w" << std::endl;
-    }
-    
-    if (app.isPressKey(KEY_S)) {
-      std::cout << "press s" << std::endl;
-    }
-    
-    if (app.isPullKey(KEY_D)) {
-      std::cout << "pull s" << std::endl;
-    }
+    // do something
   }
   
   return 0;

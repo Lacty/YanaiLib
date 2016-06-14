@@ -6,10 +6,10 @@
 #include "color.hpp"
 #include "graphic.hpp"
 #include "key.hpp"
+#include "mouse.hpp"
 
 
 struct GLFWwindow;
-using Vec2d = Eigen::Vector2d;
 
 class App {
 private:
@@ -22,12 +22,11 @@ private:
   int window_w_;
   int window_h_;
   
-  // マウスの位置
-  Vec2d mouse_pos_;
-  
   Key key_;
+  Mouse mouse_;
   
   // CallBack関数
+  static void mouseButtomCallback(GLFWwindow* window, int button, int action, int mods);
   static void mousePosCallBack(GLFWwindow* window, double xpos, double ypos);
   static void windowSizeCallBack(GLFWwindow* window, int width, int height);
   static void keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods);
@@ -58,11 +57,16 @@ public:
   void setClearColor(float r, float g, float b);
   void setClearColor(const Color& color);
   
-  // マウスの位置を取得
-  const Vec2d& mousePos() const;
-  
   // Key Events
   bool isPushKey(int key);
   bool isPullKey(int key);
   bool isPressKey(int key);
+  
+  // Mouse Events
+  bool isPushMouse(int buttom);
+  bool isPullMouse(int buttom);
+  bool isPressMouse(int buttom);
+  
+  Vec2d mousePos() const;
+  void setMousePos(const Vec2d& pos);
 };

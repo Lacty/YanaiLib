@@ -74,6 +74,7 @@
 		ACF08C7B1D10333700AF673E /* graphic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphic.cpp; sourceTree = "<group>"; };
 		ACF08C7C1D10333700AF673E /* graphic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = graphic.hpp; sourceTree = "<group>"; };
 		ACF08C7D1D10333700AF673E /* key.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = key.hpp; sourceTree = "<group>"; };
+		ACF08C801D10352600AF673E /* mouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mouse.hpp; sourceTree = "<group>"; };
 		EF368EE846C248EA8A8FC05E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -133,6 +134,7 @@
 				ACF08C7B1D10333700AF673E /* graphic.cpp */,
 				ACF08C7C1D10333700AF673E /* graphic.hpp */,
 				ACF08C7D1D10333700AF673E /* key.hpp */,
+				ACF08C801D10352600AF673E /* mouse.hpp */,
 			);
 			name = lib;
 			path = src/lib;
