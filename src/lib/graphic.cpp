@@ -26,3 +26,29 @@ void drawPoint(float x, float y, float size, const Color& color) {
   // 描画が終わったら描画モードを元に戻す
   glDisableClientState(GL_VERTEX_ARRAY);
 }
+
+void drawLine(float start_x, float start_y,
+              float end_x, float end_y,
+              float width,
+              const Color& color)
+{
+  // 描画する線分の始点と終点の座標(X, Y)を指定
+  GLfloat vtx[] = {
+    start_x, start_y,
+    end_x, end_y
+  };
+  
+  glVertexPointer(2, GL_FLOAT, 0, vtx);
+  
+  // 線分の太さを指定
+  glLineWidth(width);
+  
+  // 色を指定
+  glColor4f(color.r, color.g, color.b, 1.0f);
+  
+  // 描画
+  glEnableClientState(GL_VERTEX_ARRAY);
+  glDrawArrays(GL_LINES, 0, 2);
+  
+  glDisableClientState(GL_VERTEX_ARRAY);
+}

@@ -10,7 +10,8 @@ int main() {
   while(app.isOpen()) {
     app.letsStart();
     
-    drawPoint(0, 0, 10, Color::red());
+    drawLine(-50, -50, 50, 50,
+             5, Color::green());
   }
   
   return 0;
