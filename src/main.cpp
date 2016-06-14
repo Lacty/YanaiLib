@@ -10,7 +10,7 @@ int main() {
   while(app.isOpen()) {
     app.letsStart();
     
-    drawFillRect(0, 0, 100, 300, Color::blue());
+    std::cout << app.mousePos() << std::endl;
   }
   
   return 0;

@@ -20,8 +20,14 @@ window_h_(height)
     assert(!"window作れなかった");
   }
   
+  // このクラスをOpenGLに登録
+  glfwSetWindowUserPointer(window_, this);
+  
   // コンテキスト作る
   glfwMakeContextCurrent(window_);
+  
+  // コールバック関数を設定
+  setCallBackFunc();
   
   // fpsを60に絞る
   glfwSwapInterval(1);
@@ -36,6 +42,30 @@ App::~App() {
   glfwTerminate();
 }
 
+
+void App::mousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
+  auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
+  
+  app->mouse_pos_.x() = xpos - app->window_w_ * 0.5f;
+  app->mouse_pos_.y() = -1 * (ypos - app->window_h_ * 0.5f);
+}
+
+void App::windowSizeCallBack(GLFWwindow* window, int width, int height) {
+  auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
+  
+  // 原点を画面の中央にする
+  glViewport(0, 0, width, height);
+  glLoadIdentity();
+  glOrtho(-width * 0.5f, width * 0.5f, -height * 0.5f, height * 0.5f, -0.0f, 1.0f);
+
+  app->window_w_ = width;
+  app->window_h_ = height;
+}
+
+void App::setCallBackFunc() {
+  glfwSetCursorPosCallback(window_, mousePosCallBack);
+  glfwSetWindowSizeCallback(window_, windowSizeCallBack);
+}
 
 bool App::isOpen() {
   // windowが開いているかどうか
@@ -72,4 +102,9 @@ void App::setClearColor(float r, float g, float b) {
 
 void App::setClearColor(const Color &color) {
   clear_color_ = color;
+}
+
+
+const Vec2d& App::mousePos() const {
+  return mouse_pos_;
 }
