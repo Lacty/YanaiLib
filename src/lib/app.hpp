@@ -7,6 +7,7 @@
 #include "graphic.hpp"
 #include "key.hpp"
 #include "mouse.hpp"
+#include "font.hpp"
 
 
 struct GLFWwindow;
@@ -32,6 +33,15 @@ private:
   static void keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods);
   
   void setCallBackFunc();
+  
+  // 別座標系(左上原点)なので隠しておく
+  void setMousePos(const Vec2d& pos);
+  
+  // 描画実行
+  void begin();
+  
+  // 描画終了
+  void end();
 
 public:
   // width : 横幅
@@ -46,12 +56,6 @@ public:
   
   // 描画できるようにする
   void letsStart();
-  
-  // 描画実行
-  void begin();
-  
-  // 描画終了
-  void end();
   
   // 背景色を設定
   void setClearColor(float r, float g, float b);
@@ -68,5 +72,4 @@ public:
   bool isPressMouse(int buttom);
   
   Vec2d mousePos() const;
-  void setMousePos(const Vec2d& pos);
 };

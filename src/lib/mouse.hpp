@@ -1,11 +1,8 @@
 
 #pragma once
 #include <set>
+#include "vector.hpp"
 
-#include <Eigen/Core>
-
-
-using Vec2d = Eigen::Vector2d;
 
 class Mouse {
 private:

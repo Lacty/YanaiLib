@@ -99,4 +99,42 @@ dependencies: /Users/yanai/Desktop/YanaiLib/src/main.cpp \
   /Users/yanai/Desktop/YanaiLib/src/lib/color.hpp \
   /Users/yanai/Desktop/YanaiLib/src/lib/graphic.hpp \
   /Users/yanai/Desktop/YanaiLib/src/lib/key.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/mouse.hpp
+  /Users/yanai/Desktop/YanaiLib/src/lib/mouse.hpp \
+  /Users/yanai/Desktop/YanaiLib/src/lib/vector.hpp \
+  /Users/yanai/Desktop/YanaiLib/src/lib/font.hpp \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/ftgl.h \
+  /Users/yanai/Desktop/YanaiLib/include/ft2build.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/config/ftheader.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/freetype.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/config/ftconfig.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/config/ftoption.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/config/ftstdlib.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/fttypes.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/ftsystem.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/ftimage.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/fterrors.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/ftmoderr.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/fterrdef.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/ftglyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/freetype/ftoutln.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTPoint.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTBBox.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTBuffer.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTBitmapGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTBufferGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTExtrdGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTOutlineGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTPixmapGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTPolyGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTTextureGlyph.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLBitmapFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTBufferFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLExtrdFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLOutlineFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLPixmapFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLPolygonFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLTextureFont.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTLayout.h \
+  /Users/yanai/Desktop/YanaiLib/include/FTGL/FTSimpleLayout.h

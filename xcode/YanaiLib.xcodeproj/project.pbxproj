@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		202E1E81429F49E0814BAC8D /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 35C35E4F61A34DB9AC28931B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 590BD55E18B045FD9CFDA8FA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				85EBF502733C448C837D2F14 /* CMake Rules */,
+				F33EB15EDA564763BB5EFE45 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -20,13 +20,13 @@
 		};
 		D463572CD3E240DEA23C278F /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4F08FCB3E16E4D6CB6BB58C1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 2AFBB3A693ED480EA42E9896 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				7B6FFF3957814497A027E4BD /* CMake Rules */,
+				6C403203475644AD8343E65D /* CMake Rules */,
 			);
 			dependencies = (
-				6E9AB106FCD94000A0A97B43 /* PBXTargetDependency */,
-				40F8EEA939904793BBE61A7C /* PBXTargetDependency */,
+				AF704E857B5A4952824CFC4A /* PBXTargetDependency */,
+				4CEF6AE8993243CD83B4F431 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,148 +34,155 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		ACF08C7E1D10333700AF673E /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C781D10333700AF673E /* app.cpp */; };
-		ACF08C7F1D10333700AF673E /* graphic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C7B1D10333700AF673E /* graphic.cpp */; };
-		EEDA04390A7B456C980A2DD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 692E809AFE3D41F39311A781 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		ACF08C9E1D126FD300AF673E /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C941D126FD300AF673E /* app.cpp */; };
+		ACF08C9F1D126FD300AF673E /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C971D126FD300AF673E /* font.cpp */; };
+		ACF08CA01D126FD300AF673E /* graphic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACF08C991D126FD300AF673E /* graphic.cpp */; };
+		C2FCF0C94CD74EFB82081E01 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798DC8EBBBE249FE863B36B3 /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B3AFD76A1D94D48A83E170A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6700EDD4D6F848E3B3E2F729 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 202E1E81429F49E0814BAC8D;
-			remoteInfo = ZERO_CHECK;
-		};
-		99A34324B5AC40FAA7112DDD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6700EDD4D6F848E3B3E2F729 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 202E1E81429F49E0814BAC8D;
-			remoteInfo = ZERO_CHECK;
-		};
-		BF0D7FF3E2AB4AA79BB07552 /* PBXContainerItemProxy */ = {
+		2A22F9C1196B4131B2263A18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6700EDD4D6F848E3B3E2F729 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5C3F6950B3D143A1AFE8BA3B;
 			remoteInfo = YanaiLib;
 		};
+		5FF8ADAAF1AA413781CF767F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6700EDD4D6F848E3B3E2F729 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 202E1E81429F49E0814BAC8D;
+			remoteInfo = ZERO_CHECK;
+		};
+		B44D28AD697D48E1A28D88E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6700EDD4D6F848E3B3E2F729 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 202E1E81429F49E0814BAC8D;
+			remoteInfo = ZERO_CHECK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0066733A1059457C916ABA29 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		2B27622AAF8943EDA98F8E2F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4A315DF6E77B4C60AD64F3FA /* YanaiLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = YanaiLib; sourceTree = BUILT_PRODUCTS_DIR; };
-		692E809AFE3D41F39311A781 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		ACF08C781D10333700AF673E /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
-		ACF08C791D10333700AF673E /* app.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
-		ACF08C7A1D10333700AF673E /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color.hpp; sourceTree = "<group>"; };
-		ACF08C7B1D10333700AF673E /* graphic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphic.cpp; sourceTree = "<group>"; };
-		ACF08C7C1D10333700AF673E /* graphic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = graphic.hpp; sourceTree = "<group>"; };
-		ACF08C7D1D10333700AF673E /* key.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = key.hpp; sourceTree = "<group>"; };
-		ACF08C801D10352600AF673E /* mouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mouse.hpp; sourceTree = "<group>"; };
-		EF368EE846C248EA8A8FC05E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1205B28850334CAB924364D7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3426056C17C74B1CA7D23D07 /* YanaiLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = YanaiLib; sourceTree = BUILT_PRODUCTS_DIR; };
+		798DC8EBBBE249FE863B36B3 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		98D11D2808F54DCFB4E9B94E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ACF08C941D126FD300AF673E /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
+		ACF08C951D126FD300AF673E /* app.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
+		ACF08C961D126FD300AF673E /* color.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = color.hpp; sourceTree = "<group>"; };
+		ACF08C971D126FD300AF673E /* font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = font.cpp; sourceTree = "<group>"; };
+		ACF08C981D126FD300AF673E /* font.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = font.hpp; sourceTree = "<group>"; };
+		ACF08C991D126FD300AF673E /* graphic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphic.cpp; sourceTree = "<group>"; };
+		ACF08C9A1D126FD300AF673E /* graphic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = graphic.hpp; sourceTree = "<group>"; };
+		ACF08C9B1D126FD300AF673E /* key.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = key.hpp; sourceTree = "<group>"; };
+		ACF08C9C1D126FD300AF673E /* mouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mouse.hpp; sourceTree = "<group>"; };
+		ACF08C9D1D126FD300AF673E /* vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector.hpp; sourceTree = "<group>"; };
+		C50E193DFF9E4DB0893FFF66 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		10DB3B5513E94407863D6582 /* ZERO_CHECK */ = {
+		1C13689768414331AFBE3F2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2AE2F8839464CC0A55E9374 /* CMake Rules */,
-				0066733A1059457C916ABA29 /* CMakeLists.txt */,
+				3426056C17C74B1CA7D23D07 /* YanaiLib */,
 			);
-			name = ZERO_CHECK;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		33ED55D4C48F4719B67417A8 /* Source Files */ = {
+		1EB1F736AB204A5480AB37D0 = {
 			isa = PBXGroup;
 			children = (
-				ACF08C771D10333700AF673E /* lib */,
-				692E809AFE3D41F39311A781 /* main.cpp */,
+				7EBF87BB218E4D0CA829CC84 /* Sources */,
+				77EB6672C7AA40DDBCFC970B /* Resources */,
+				1C13689768414331AFBE3F2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38831C2318FE4477BFD2700C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4CC3BD830EC8430EABAD60C5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACF08C931D126FD300AF673E /* lib */,
+				798DC8EBBBE249FE863B36B3 /* main.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		39A8D64A9F6A40D7B612BDE0 /* Sources */ = {
+		77EB6672C7AA40DDBCFC970B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				54E26C436A7749E49E11CA5F /* ALL_BUILD */,
-				10DB3B5513E94407863D6582 /* ZERO_CHECK */,
-				6758540B94B14D00BDB5D010 /* YanaiLib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7EBF87BB218E4D0CA829CC84 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F8CF9669D2C541F5B8218C1A /* ALL_BUILD */,
+				DD437378BBE14B63A8EA9D97 /* ZERO_CHECK */,
+				9C869EF0BF1C451F82B2CB32 /* YanaiLib */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		54E26C436A7749E49E11CA5F /* ALL_BUILD */ = {
+		9AE05832665B486FAFDDEB8B /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				C67FDCE9074D466B97C21E49 /* CMake Rules */,
-				EF368EE846C248EA8A8FC05E /* CMakeLists.txt */,
 			);
-			name = ALL_BUILD;
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		6758540B94B14D00BDB5D010 /* YanaiLib */ = {
+		9C869EF0BF1C451F82B2CB32 /* YanaiLib */ = {
 			isa = PBXGroup;
 			children = (
-				33ED55D4C48F4719B67417A8 /* Source Files */,
-				2B27622AAF8943EDA98F8E2F /* CMakeLists.txt */,
+				4CC3BD830EC8430EABAD60C5 /* Source Files */,
+				1205B28850334CAB924364D7 /* CMakeLists.txt */,
 			);
 			name = YanaiLib;
 			sourceTree = "<group>";
 		};
-		ACF08C771D10333700AF673E /* lib */ = {
+		ACF08C931D126FD300AF673E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				ACF08C781D10333700AF673E /* app.cpp */,
-				ACF08C791D10333700AF673E /* app.hpp */,
-				ACF08C7A1D10333700AF673E /* color.hpp */,
-				ACF08C7B1D10333700AF673E /* graphic.cpp */,
-				ACF08C7C1D10333700AF673E /* graphic.hpp */,
-				ACF08C7D1D10333700AF673E /* key.hpp */,
-				ACF08C801D10352600AF673E /* mouse.hpp */,
+				ACF08C941D126FD300AF673E /* app.cpp */,
+				ACF08C951D126FD300AF673E /* app.hpp */,
+				ACF08C961D126FD300AF673E /* color.hpp */,
+				ACF08C971D126FD300AF673E /* font.cpp */,
+				ACF08C981D126FD300AF673E /* font.hpp */,
+				ACF08C991D126FD300AF673E /* graphic.cpp */,
+				ACF08C9A1D126FD300AF673E /* graphic.hpp */,
+				ACF08C9B1D126FD300AF673E /* key.hpp */,
+				ACF08C9C1D126FD300AF673E /* mouse.hpp */,
+				ACF08C9D1D126FD300AF673E /* vector.hpp */,
 			);
 			name = lib;
 			path = src/lib;
 			sourceTree = "<group>";
 		};
-		B890AFF32AA84C5DB4DF19E4 = {
+		DD437378BBE14B63A8EA9D97 /* ZERO_CHECK */ = {
 			isa = PBXGroup;
 			children = (
-				39A8D64A9F6A40D7B612BDE0 /* Sources */,
-				E8EB3EE9ED8D4A08B3BF2367 /* Resources */,
-				DE7EFFA25B7D4A51A7113BAB /* Products */,
+				9AE05832665B486FAFDDEB8B /* CMake Rules */,
+				98D11D2808F54DCFB4E9B94E /* CMakeLists.txt */,
 			);
+			name = ZERO_CHECK;
 			sourceTree = "<group>";
 		};
-		C67FDCE9074D466B97C21E49 /* CMake Rules */ = {
+		F8CF9669D2C541F5B8218C1A /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
+				38831C2318FE4477BFD2700C /* CMake Rules */,
+				C50E193DFF9E4DB0893FFF66 /* CMakeLists.txt */,
 			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		DE7EFFA25B7D4A51A7113BAB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4A315DF6E77B4C60AD64F3FA /* YanaiLib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E2AE2F8839464CC0A55E9374 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		E8EB3EE9ED8D4A08B3BF2367 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,18 +190,18 @@
 /* Begin PBXNativeTarget section */
 		5C3F6950B3D143A1AFE8BA3B /* YanaiLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 234E70398C43476CA19199E7 /* Build configuration list for PBXNativeTarget "YanaiLib" */;
+			buildConfigurationList = 0A47F9C21B6B4A9B8796EFA2 /* Build configuration list for PBXNativeTarget "YanaiLib" */;
 			buildPhases = (
-				1DB82E254CAE48699BA4FD21 /* Sources */,
+				BEE385FAD25D4298B6864C91 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4931B6E39AAB42B8BDF2F7B6 /* PBXTargetDependency */,
+				5189B26D359141DB9D9A9EBA /* PBXTargetDependency */,
 			);
 			name = YanaiLib;
 			productName = YanaiLib;
-			productReference = 4A315DF6E77B4C60AD64F3FA /* YanaiLib */;
+			productReference = 3426056C17C74B1CA7D23D07 /* YanaiLib */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -206,14 +213,14 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0730;
 			};
-			buildConfigurationList = 86BBD981D6FD45289BAA4A02 /* Build configuration list for PBXProject "YanaiLib" */;
+			buildConfigurationList = CF754B23B3BD42F5AB5EFDB6 /* Build configuration list for PBXProject "YanaiLib" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B890AFF32AA84C5DB4DF19E4;
+			mainGroup = 1EB1F736AB204A5480AB37D0;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
@@ -225,7 +232,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B6FFF3957814497A027E4BD /* CMake Rules */ = {
+		6C403203475644AD8343E65D /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,7 +243,7 @@
 			shellScript = "make -C /Users/yanai/Desktop/YanaiLib/xcode -f /Users/yanai/Desktop/YanaiLib/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		85EBF502733C448C837D2F14 /* CMake Rules */ = {
+		F33EB15EDA564763BB5EFE45 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,38 +257,169 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DB82E254CAE48699BA4FD21 /* Sources */ = {
+		BEE385FAD25D4298B6864C91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDA04390A7B456C980A2DD9 /* main.cpp in Sources */,
-				ACF08C7F1D10333700AF673E /* graphic.cpp in Sources */,
-				ACF08C7E1D10333700AF673E /* app.cpp in Sources */,
+				C2FCF0C94CD74EFB82081E01 /* main.cpp in Sources */,
+				ACF08C9E1D126FD300AF673E /* app.cpp in Sources */,
+				ACF08CA01D126FD300AF673E /* graphic.cpp in Sources */,
+				ACF08C9F1D126FD300AF673E /* font.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40F8EEA939904793BBE61A7C /* PBXTargetDependency */ = {
+		4CEF6AE8993243CD83B4F431 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 202E1E81429F49E0814BAC8D /* ZERO_CHECK */;
-			targetProxy = 7B3AFD76A1D94D48A83E170A /* PBXContainerItemProxy */;
+			targetProxy = B44D28AD697D48E1A28D88E7 /* PBXContainerItemProxy */;
 		};
-		4931B6E39AAB42B8BDF2F7B6 /* PBXTargetDependency */ = {
+		5189B26D359141DB9D9A9EBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 202E1E81429F49E0814BAC8D /* ZERO_CHECK */;
-			targetProxy = 99A34324B5AC40FAA7112DDD /* PBXContainerItemProxy */;
+			targetProxy = 5FF8ADAAF1AA413781CF767F /* PBXContainerItemProxy */;
 		};
-		6E9AB106FCD94000A0A97B43 /* PBXTargetDependency */ = {
+		AF704E857B5A4952824CFC4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5C3F6950B3D143A1AFE8BA3B /* YanaiLib */;
-			targetProxy = BF0D7FF3E2AB4AA79BB07552 /* PBXContainerItemProxy */;
+			targetProxy = 2A22F9C1196B4131B2263A18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01538CA70B0D4BA79C8269EF /* Release */ = {
+		0E764BCD818749D3A985D609 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		1847DDE25761408986404354 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
+			};
+			name = MinSizeRel;
+		};
+		345A1A79E2B7480591687004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
+			};
+			name = Debug;
+		};
+		3DEDFF4EBA3A4C56A67AC08B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		44F728306DEA4C039B779BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
+			};
+			name = Release;
+		};
+		66454171414140519A4D730A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/yanai/Desktop/YanaiLib/include;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "     -std=c++14";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libglfw3.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libFTGL.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libfreetype.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = YanaiLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		8D4A1151FE644F3D9B9F6F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		97B410B2F0704D79ACE468A0 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -304,88 +442,23 @@
 					"$(inherited)",
 				);
 			};
-			name = Release;
+			name = MinSizeRel;
 		};
-		0580F7BE8FAD4881B4BC0677 /* Release */ = {
+		A0CE5B212E2441BD90C1E787 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = /Users/yanai/Desktop/YanaiLib/include;
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"-std=c++14",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"-framework",
-					Cocoa,
-					"-framework",
-					OpenGL,
-					"-framework",
-					IOKit,
-					"-framework",
-					CoreVideo,
-					/Users/yanai/Desktop/YanaiLib/lib/libglfw3.a,
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = YanaiLib;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/src;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
-			};
-			name = Release;
-		};
-		2A38C4F39D624147ACE66ECE /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = /Users/yanai/Desktop/YanaiLib/include;
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"-std=c++14",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"-framework",
-					Cocoa,
-					"-framework",
-					OpenGL,
-					"-framework",
-					IOKit,
-					"-framework",
-					CoreVideo,
-					/Users/yanai/Desktop/YanaiLib/lib/libglfw3.a,
-				);
+				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = YanaiLib;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/src;
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -394,9 +467,9 @@
 					"$(inherited)",
 				);
 			};
-			name = RelWithDebInfo;
+			name = Debug;
 		};
-		32F4E48C2FFD4D6DA7EF1E93 /* MinSizeRel */ = {
+		B25C60300FA24B369614D74A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -425,7 +498,9 @@
 					IOKit,
 					"-framework",
 					CoreVideo,
-					/Users/yanai/Desktop/YanaiLib/lib/libglfw3.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libglfw3.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libFTGL.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libfreetype.a,
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = YanaiLib;
@@ -441,7 +516,7 @@
 			};
 			name = MinSizeRel;
 		};
-		4F0AEBE0697C4BE3963F0B84 /* Debug */ = {
+		CD3C864C567F4D92A44B3597 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -454,90 +529,6 @@
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
-			};
-			name = Debug;
-		};
-		8245C3EE7F28454CBC4A9BCF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
-			};
-			name = Debug;
-		};
-		890E7138202A4624B37387A7 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
-			};
-			name = MinSizeRel;
-		};
-		940F96F3B68042018F08FBC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
-			};
-			name = Debug;
-		};
-		988225FBEB59402FBAB57401 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
 				USE_HEADERMAP = NO;
@@ -550,41 +541,7 @@
 			};
 			name = Release;
 		};
-		9CD43F3660BF4729AD8566B1 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
-			};
-			name = MinSizeRel;
-		};
-		A0992C4F027745B88D1BD1C4 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
-			};
-			name = RelWithDebInfo;
-		};
-		B6D9D332949645D0B2106BD7 /* Debug */ = {
+		DE2381081CB34ED6AE383750 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -592,13 +549,16 @@
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = /Users/yanai/Desktop/YanaiLib/include;
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CPLUSPLUSFLAGS = "     -std=c++14";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++14",
+				);
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
@@ -610,7 +570,9 @@
 					IOKit,
 					"-framework",
 					CoreVideo,
-					/Users/yanai/Desktop/YanaiLib/lib/libglfw3.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libglfw3.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libFTGL.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libfreetype.a,
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = YanaiLib;
@@ -624,9 +586,106 @@
 					"$(inherited)",
 				);
 			};
-			name = Debug;
+			name = RelWithDebInfo;
 		};
-		C143CF5E3DC64D7EB86B187E /* RelWithDebInfo */ = {
+		E486A18F32834322B94D2DCF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		EF62511C7B964C439AC0F420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/yanai/Desktop/YanaiLib/include;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++14",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libglfw3.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libFTGL.a,
+					/Users/yanai/Desktop/YanaiLib/lib/OSX/libfreetype.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = YanaiLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		F425768BDA3649FD94760192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		F6224179822248128CA954A7 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -651,92 +710,49 @@
 			};
 			name = RelWithDebInfo;
 		};
-		D3D3ECE334284F4986458BAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
-			};
-			name = Release;
-		};
-		E43C823ACB744CD78DA55F58 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
-			};
-			name = RelWithDebInfo;
-		};
-		F170C645D3594882B0E2FB01 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/yanai/Desktop/YanaiLib/xcode/build;
-			};
-			name = MinSizeRel;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		234E70398C43476CA19199E7 /* Build configuration list for PBXNativeTarget "YanaiLib" */ = {
+		0A47F9C21B6B4A9B8796EFA2 /* Build configuration list for PBXNativeTarget "YanaiLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6D9D332949645D0B2106BD7 /* Debug */,
-				0580F7BE8FAD4881B4BC0677 /* Release */,
-				32F4E48C2FFD4D6DA7EF1E93 /* MinSizeRel */,
-				2A38C4F39D624147ACE66ECE /* RelWithDebInfo */,
+				66454171414140519A4D730A /* Debug */,
+				EF62511C7B964C439AC0F420 /* Release */,
+				B25C60300FA24B369614D74A /* MinSizeRel */,
+				DE2381081CB34ED6AE383750 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		35C35E4F61A34DB9AC28931B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		2AFBB3A693ED480EA42E9896 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				940F96F3B68042018F08FBC3 /* Debug */,
-				988225FBEB59402FBAB57401 /* Release */,
-				9CD43F3660BF4729AD8566B1 /* MinSizeRel */,
-				E43C823ACB744CD78DA55F58 /* RelWithDebInfo */,
+				A0CE5B212E2441BD90C1E787 /* Debug */,
+				CD3C864C567F4D92A44B3597 /* Release */,
+				97B410B2F0704D79ACE468A0 /* MinSizeRel */,
+				F6224179822248128CA954A7 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4F08FCB3E16E4D6CB6BB58C1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		590BD55E18B045FD9CFDA8FA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F0AEBE0697C4BE3963F0B84 /* Debug */,
-				01538CA70B0D4BA79C8269EF /* Release */,
-				890E7138202A4624B37387A7 /* MinSizeRel */,
-				C143CF5E3DC64D7EB86B187E /* RelWithDebInfo */,
+				8D4A1151FE644F3D9B9F6F5B /* Debug */,
+				F425768BDA3649FD94760192 /* Release */,
+				E486A18F32834322B94D2DCF /* MinSizeRel */,
+				0E764BCD818749D3A985D609 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		86BBD981D6FD45289BAA4A02 /* Build configuration list for PBXProject "YanaiLib" */ = {
+		CF754B23B3BD42F5AB5EFDB6 /* Build configuration list for PBXProject "YanaiLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8245C3EE7F28454CBC4A9BCF /* Debug */,
-				D3D3ECE334284F4986458BAE /* Release */,
-				F170C645D3594882B0E2FB01 /* MinSizeRel */,
-				A0992C4F027745B88D1BD1C4 /* RelWithDebInfo */,
+				345A1A79E2B7480591687004 /* Debug */,
+				44F728306DEA4C039B779BB8 /* Release */,
+				1847DDE25761408986404354 /* MinSizeRel */,
+				3DEDFF4EBA3A4C56A67AC08B /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

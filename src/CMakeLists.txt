@@ -19,7 +19,9 @@ if (APPLE)
     ${OpenGL_LIBRARY}
     ${IOKIT_LIBRARY}
     ${COREVIDEO_LIBRARY}
-    ${CMAKE_SOURCE_DIR}/lib/libglfw3.a
+    ${CMAKE_SOURCE_DIR}/lib/OSX/libglfw3.a
+    ${CMAKE_SOURCE_DIR}/lib/OSX/libFTGL.a
+    ${CMAKE_SOURCE_DIR}/lib/OSX/libfreetype.a
   )
 endif()
 
