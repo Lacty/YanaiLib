@@ -7,12 +7,15 @@ int main() {
   
   app.setClearColor(Color::gray());
   
-  Font font("../../../res/rounded-l-mplus-1p-heavy.ttf");
+  Random random;
+  
+  for (int i = 0; i < 10; i++) {
+    std::cout << random.get(0.0, 1.0) << std::endl;
+  }
   
   while(app.isOpen()) {
     app.letsStart();
     
-    font.draw(L"Yanai もくもく会きてね!", 0, 0, 40);
   }
   
   return 0;

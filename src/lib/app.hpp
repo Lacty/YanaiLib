@@ -8,6 +8,7 @@
 #include "key.hpp"
 #include "mouse.hpp"
 #include "font.hpp"
+#include "random.hpp"
 
 
 struct GLFWwindow;

@@ -138,4 +138,5 @@ dependencies: /Users/yanai/Desktop/YanaiLib/src/lib/app.cpp \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLTextureFont.h \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/FTLayout.h \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/FTSimpleLayout.h \
+  /Users/yanai/Desktop/YanaiLib/src/lib/random.hpp \
   /Users/yanai/Desktop/YanaiLib/include/GLFW/glfw3.h
