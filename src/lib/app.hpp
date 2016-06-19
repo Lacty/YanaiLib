@@ -9,6 +9,7 @@
 #include "mouse.hpp"
 #include "font.hpp"
 #include "random.hpp"
+#include "clock.hpp"
 
 
 struct GLFWwindow;
