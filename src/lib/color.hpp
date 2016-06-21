@@ -16,4 +16,5 @@ public:
   static Color green() { return Color(0, 1, 0); }
   static Color blue()  { return Color(0, 0, 1); }
   static Color gray()  { return Color(0.3f, 0.3f, 0.3f); }
+  static Color white() { return Color(1, 1, 1); }
 };

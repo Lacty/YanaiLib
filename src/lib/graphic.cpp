@@ -5,7 +5,7 @@
 #include <GLFW/glfw3.h>
 
 
-void drawPoint(float x, float y, float size, const Color& color) {
+void drawPoint(float x, float y, float size, bool smooth, const Color& color) {
   // 点を描画する位置を指定
   GLfloat vtx[] = { x, y };
   
@@ -17,6 +17,11 @@ void drawPoint(float x, float y, float size, const Color& color) {
   
   // 色を指定
   glColor4f(color.r, color.g, color.b, 1.0f);
+  
+  // smooth指定があればsmoothに設定
+  if (smooth) {
+    glEnable(GL_POINT_SMOOTH);
+  } else glDisable(GL_POINT_SMOOTH);
   
   // 頂点配列で描画するモードに切り替えて
   // 点を描画

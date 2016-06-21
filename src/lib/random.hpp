@@ -13,6 +13,7 @@ public:
   Random();
   Random(int seed);
   
-  int    get(int start, int last);
+  int    get(int    start, int    last);
+  float  get(float  start, float  last);
   double get(double start, double last);
 };

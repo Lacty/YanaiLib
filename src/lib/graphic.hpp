@@ -8,7 +8,7 @@ class Color;
 // x y : 位置
 // size : サイズ
 // color : 色
-void drawPoint(float x, float y, float size, const Color& color);
+void drawPoint(float x, float y, float size, bool smooth, const Color& color);
 
 
 // 線を描画
