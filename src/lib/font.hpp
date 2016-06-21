@@ -17,4 +17,5 @@ public:
   void draw(const std::string& str, const float x, const float y, const int size);
   void draw(const wchar_t* str, const float x, const float y, const int size);
   void drawCenter(const std::string& str, const float x, const float y, const int size);
+  void drawCenter(const wchar_t* str, const float x, const float y, const int size);
 };
