@@ -1,5 +1,5 @@
-dependencies: /Users/yanai/Desktop/YanaiLib/src/main.cpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/app.hpp \
+dependencies: /Users/yanai/Desktop/UDPGAME/UdpSend/src/main.cpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/app.hpp \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/Core \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/src/Core/util/DisableStupidWarnings.h \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/src/Core/util/Macros.h \
@@ -96,12 +96,12 @@ dependencies: /Users/yanai/Desktop/YanaiLib/src/main.cpp \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/src/Core/ArrayWrapper.h \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/src/Core/GlobalFunctions.h \
   /Users/yanai/Desktop/YanaiLib/include/Eigen/src/Core/util/ReenableStupidWarnings.h \
-  /Users/yanai/Desktop/YanaiLib/src/lib/color.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/graphic.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/key.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/mouse.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/vector.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/font.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/color.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/graphic.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/key.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/mouse.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/vector.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/font.hpp \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/ftgl.h \
   /Users/yanai/Desktop/YanaiLib/include/ft2build.h \
   /Users/yanai/Desktop/YanaiLib/include/freetype/config/ftheader.h \
@@ -138,5 +138,7 @@ dependencies: /Users/yanai/Desktop/YanaiLib/src/main.cpp \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/FTGLTextureFont.h \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/FTLayout.h \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/FTSimpleLayout.h \
-  /Users/yanai/Desktop/YanaiLib/src/lib/random.hpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/clock.hpp
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/random.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/clock.hpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/udp.hpp \
+  /Users/yanai/Desktop/YanaiLib/include/picojson.h

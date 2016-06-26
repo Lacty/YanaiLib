@@ -1,5 +1,5 @@
-dependencies: /Users/yanai/Desktop/YanaiLib/src/lib/font.cpp \
-  /Users/yanai/Desktop/YanaiLib/src/lib/font.hpp \
+dependencies: /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/font.cpp \
+  /Users/yanai/Desktop/UDPGAME/UdpSend/src/lib/font.hpp \
   /Users/yanai/Desktop/YanaiLib/include/FTGL/ftgl.h \
   /Users/yanai/Desktop/YanaiLib/include/ft2build.h \
   /Users/yanai/Desktop/YanaiLib/include/freetype/config/ftheader.h \
