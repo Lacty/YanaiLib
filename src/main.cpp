@@ -11,7 +11,7 @@ int main() {
   
   while(app.isOpen()) {
     app.letsStart();
-    
+
   }
   
   return 0;

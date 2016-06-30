@@ -5,19 +5,19 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\lib\random.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\lib\app.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\lib\clock.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\lib\font.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\lib\graphic.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\lib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -26,6 +26,9 @@
   <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{8A516B62-1376-37F1-A4D6-CA3F77D650B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{10c85491-2e22-4b38-92d7-26cb6f9a6a3a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
