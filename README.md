@@ -3,7 +3,7 @@
 ## what this
 - This is Simple Game Framework.
 
-### used library
+### this library made up of
 - [GLFW](https://github.com/glfw/glfw)	
 - [FreeType](https://www.freetype.org/developer.html)	
 - [ftgl](https://github.com/ulrichard/ftgl)
