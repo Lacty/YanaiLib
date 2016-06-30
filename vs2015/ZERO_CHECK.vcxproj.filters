@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\USER\Desktop\YanaiLib\vs2015\CMakeFiles\76b1c60c31bf96f19cd4011da750b489\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B365DAD4-1D48-32FF-8B28-9C3701FF4612}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

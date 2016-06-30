@@ -1,4 +1,4 @@
-
+﻿
 #include "app.hpp"
 
 #include <cassert>
@@ -7,44 +7,44 @@
 
 
 App::App(int width, int height, const char* title) :
-window_w_(width),
-window_h_(height)
+  window_w_(width),
+  window_h_(height)
 {
-  // OpenGLの初期化に失敗した
+  // OpenGL$B$N=i4|2=$K<:GT$7$?(B
   assert(glfwInit());
-  
-  // window作る
+
+  // window$B:n$k(B
   window_ = glfwCreateWindow(window_w_, window_h_, title, NULL, NULL);
   if (!window_) {
     glfwTerminate();
-    assert(!"window作れなかった");
+    assert(!"window$B:n$l$J$+$C$?(B");
   }
-  
-  // このクラスをOpenGLに登録
+
+  // $B$3$N%/%i%9$r(BOpenGL$B$KEPO?(B
   glfwSetWindowUserPointer(window_, this);
-  
-  // コンテキスト作る
+
+  // $B%3%s%F%-%9%H:n$k(B
   glfwMakeContextCurrent(window_);
-  
-  // コールバック関数を設定
+
+  // $B%3!<%k%P%C%/4X?t$r@_Dj(B
   setCallBackFunc();
-  
-  // fpsを60に絞る
+
+  // fps$B$r(B60$B$K9J$k(B
   glfwSwapInterval(1);
-  
-  // 原点を画面の中央にする
+
+  // $B86E@$r2hLL$NCf1{$K$9$k(B
   glViewport(0, 0, window_w_, window_h_);
   glOrtho(-window_w_ * 0.5f, window_w_ * 0.5f, -window_h_ * 0.5f, window_h_ * 0.5f, -0.0f, 1.0f);
 }
 
 App::~App() {
-  // OpenGLの後片付け
+  // OpenGL$B$N8eJRIU$1(B
   glfwTerminate();
 }
 
 void App::mouseButtomCallback(GLFWwindow* window, int button, int action, int mods) {
   auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
-  
+
   if (action == GLFW_PRESS) {
     app->mouse_.setButtonPush(button);
     app->mouse_.setButtonPress(button);
@@ -57,14 +57,14 @@ void App::mouseButtomCallback(GLFWwindow* window, int button, int action, int mo
 
 void App::mousePosCallBack(GLFWwindow* window, double xpos, double ypos) {
   auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
-  
+
   app->mouse_.setPos(xpos - app->window_w_ * 0.5f, -1 * (ypos - app->window_h_ * 0.5f));
 }
 
 void App::windowSizeCallBack(GLFWwindow* window, int width, int height) {
   auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
-  
-  // 原点を画面の中央にする
+
+  // $B86E@$r2hLL$NCf1{$K$9$k(B
   glViewport(0, 0, width, height);
   glLoadIdentity();
   glOrtho(-width * 0.5f, width * 0.5f, -height * 0.5f, height * 0.5f, -0.0f, 1.0f);
@@ -75,7 +75,7 @@ void App::windowSizeCallBack(GLFWwindow* window, int width, int height) {
 
 void App::keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods) {
   auto app = static_cast<App*>(glfwGetWindowUserPointer(window));
-  
+
   if (action == GLFW_PRESS) {
     app->key_.setKeyPush(key);
     app->key_.setKeyPress(key);
@@ -94,7 +94,7 @@ void App::setCallBackFunc() {
 }
 
 bool App::isOpen() {
-  // windowが開いているかどうか
+  // window$B$,3+$$$F$$$k$+$I$&$+(B
   return !glfwWindowShouldClose(window_);
 }
 
@@ -104,13 +104,13 @@ void App::letsStart() {
 }
 
 void App::begin() {
-  // 背景色を設定
+  // $BGX7J?'$r@_Dj(B
   glClearColor(clear_color_.r, clear_color_.g, clear_color_.b, 1.0f);
-  
-  // 画面のバッファを削除
+
+  // $B2hLL$N%P%C%U%!$r:o=|(B
   glClear(GL_COLOR_BUFFER_BIT);
-  
-  // 色データを初期化
+
+  // $B?'%G!<%?$r=i4|2=(B
   glColor4f(1, 1, 1, 1);
 }
 
@@ -118,10 +118,10 @@ void App::end() {
   key_.frashInput();
   mouse_.frashInput();
 
-  // バッファを切り替え
+  // $B%P%C%U%!$r@Z$jBX$((B
   glfwSwapBuffers(window_);
-  
-  // 入力イベント受付
+
+  // $BF~NO%$%Y%s%H<uIU(B
   glfwPollEvents();
 }
 
@@ -134,13 +134,13 @@ void App::setClearColor(const Color &color) {
 }
 
 // Key Events
-bool App::isPushKey(int key)  { return key_.isPush(key); }
-bool App::isPullKey(int key)  { return key_.isPull(key); }
+bool App::isPushKey(int key) { return key_.isPush(key); }
+bool App::isPullKey(int key) { return key_.isPull(key); }
 bool App::isPressKey(int key) { return key_.isPress(key); }
 
 // Mouse Events
-bool App::isPushMouse(int buttom)  { return mouse_.isPush(buttom); }
-bool App::isPullMouse(int buttom)  { return mouse_.isPull(buttom); }
+bool App::isPushMouse(int buttom) { return mouse_.isPush(buttom); }
+bool App::isPullMouse(int buttom) { return mouse_.isPull(buttom); }
 bool App::isPressMouse(int buttom) { return mouse_.isPress(buttom); }
 
 Vec2d App::mousePos() const { return mouse_.pos(); }

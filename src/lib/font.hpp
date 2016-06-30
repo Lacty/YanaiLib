@@ -1,4 +1,4 @@
-
+﻿
 #pragma once
 #define FTGL_LIBRARY_STATIC
 

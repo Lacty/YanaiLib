@@ -1,0 +1,50 @@
+﻿  app.cpp
+C:\Users\USER\Desktop\YanaiLib\src\lib\app.cpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+c:\users\user\desktop\yanailib\src\lib\app.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+c:\users\user\desktop\yanailib\src\lib\graphic.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+c:\users\user\desktop\yanailib\src\lib\clock.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\USER\Desktop\YanaiLib\src\lib\app.cpp(19): error C2001: 定数が 2 行目に続いています。
+C:\Users\USER\Desktop\YanaiLib\src\lib\app.cpp(19): fatal error C1057: マクロ展開中に予期せぬ EOF を検出しました。
+  clock.cpp
+c:\users\user\desktop\yanailib\src\lib\clock.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\USER\Desktop\YanaiLib\src\lib\clock.cpp(20): error C2039: 'dura': 'Clock' のメンバーではありません。
+  c:\users\user\desktop\yanailib\src\lib\clock.hpp(7): note: 'Clock' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\clock.cpp(21): error C2065: 'current_': 定義されていない識別子です。
+C:\Users\USER\Desktop\YanaiLib\src\lib\clock.cpp(22): error C2065: 'current_': 定義されていない識別子です。
+C:\Users\USER\Desktop\YanaiLib\src\lib\clock.cpp(22): error C2065: 'last_': 定義されていない識別子です。
+C:\Users\USER\Desktop\YanaiLib\src\lib\clock.cpp(23): error C2065: 'last_': 定義されていない識別子です。
+  graphic.cpp
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+c:\users\user\desktop\yanailib\src\lib\graphic.hpp : warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(19): error C2059: 構文エラー: 'else'
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(23): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(23): error C2365: 'glEnableClientState': 再定義; 以前の定義は '関数' でした。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL/gl.h(1230): note: 'glEnableClientState' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(24): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(24): error C2365: 'glDrawArrays': 再定義; 以前の定義は '関数' でした。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL/gl.h(1222): note: 'glDrawArrays' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(27): error C2059: 構文エラー: '}'
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(27): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(33): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(33): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(39): error C2065: 'vtx': 定義されていない識別子です。
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(39): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(39): error C2365: 'glVertexPointer': 再定義; 以前の定義は '関数' でした。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL/gl.h(1491): note: 'glVertexPointer' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(46): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(46): error C2365: 'glEnableClientState': 再定義; 以前の定義は '関数' でした。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL/gl.h(1230): note: 'glEnableClientState' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(47): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(47): error C2365: 'glDrawArrays': 再定義; 以前の定義は '関数' でした。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL/gl.h(1222): note: 'glDrawArrays' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(49): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(49): error C2365: 'glDisableClientState': 再定義; 以前の定義は '関数' でした。
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\GL/gl.h(1221): note: 'glDisableClientState' の宣言を確認してください
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(50): error C2059: 構文エラー: '}'
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(50): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(54): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\Users\USER\Desktop\YanaiLib\src\lib\graphic.cpp(54): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
+  key.cpp
+  mouse.cpp
+  vector.cpp
+  コードを生成中...

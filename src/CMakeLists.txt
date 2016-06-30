@@ -1,14 +1,18 @@
-
+﻿
+# set include directory
 include_directories(
   ${CMAKE_SOURCE_DIR}/include
 )
 
+# set compiler option
 if (APPLE)
   add_definitions(-std=c++14)
 endif()
 
 add_executable(YanaiLib main.cpp)
 
+
+# find library
 if (APPLE)
   find_library(COCOA_LIBRARY     Cocoa)
   find_library(OpenGL_LIBRARY    OpenGL)
@@ -19,9 +23,16 @@ if (APPLE)
     ${OpenGL_LIBRARY}
     ${IOKIT_LIBRARY}
     ${COREVIDEO_LIBRARY}
-    ${CMAKE_SOURCE_DIR}/lib/OSX/libglfw3.a
-    ${CMAKE_SOURCE_DIR}/lib/OSX/libFTGL.a
-    ${CMAKE_SOURCE_DIR}/lib/OSX/libfreetype.a
+    ${CMAKE_SOURCE_DIR}/lib/osx/libglfw3.a
+    ${CMAKE_SOURCE_DIR}/lib/osx/libFTGL.a
+    ${CMAKE_SOURCE_DIR}/lib/osx/libfreetype.a
+  )
+elseif(MSVC)
+  set(EXTRA_LIBS
+    ${CMAKE_SOURCE_DIR}/lib/win/OpenGL32.lib
+    ${CMAKE_SOURCE_DIR}/lib/win/freetype.lib
+    ${CMAKE_SOURCE_DIR}/lib/win/ftgld.lib
+    ${CMAKE_SOURCE_DIR}/lib/win/glfw3d.lib
   )
 endif()
 

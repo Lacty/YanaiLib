@@ -1,0 +1,4 @@
+﻿  graphic.cpp
+MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrt.lib' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
+  YanaiLib.vcxproj -> C:\Users\USER\Desktop\YanaiLib\vs2015\src\Debug\YanaiLib.exe
+  YanaiLib.vcxproj -> C:/Users/USER/Desktop/YanaiLib/vs2015/src/Debug/YanaiLib.pdb (Full PDB)

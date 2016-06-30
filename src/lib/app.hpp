@@ -1,4 +1,4 @@
-
+﻿
 #pragma once
 
 #include <iostream>
@@ -18,17 +18,17 @@ class App {
 private:
   GLFWwindow* window_;
 
-  // 背景色
+  // $BGX7J?'(B
   Color clear_color_;
 
-  // windowのサイズ
+  // window$B$N%5%$%:(B
   int window_w_;
   int window_h_;
   
   Key key_;
   Mouse mouse_;
   
-  // CallBack関数
+  // CallBack$B4X?t(B
   static void mouseButtomCallback(GLFWwindow* window, int button, int action, int mods);
   static void mousePosCallBack(GLFWwindow* window, double xpos, double ypos);
   static void windowSizeCallBack(GLFWwindow* window, int width, int height);
@@ -36,30 +36,30 @@ private:
   
   void setCallBackFunc();
   
-  // 別座標系(左上原点)なので隠しておく
+  // $BJL:BI87O(B($B:8>e86E@(B)$B$J$N$G1#$7$F$*$/(B
   void setMousePos(const Vec2d& pos);
   
-  // 描画実行
+  // $BIA2h<B9T(B
   void begin();
   
-  // 描画終了
+  // $BIA2h=*N;(B
   void end();
 
 public:
-  // width : 横幅
-  // height : 縦幅
-  // title : タイトル
+  // width : $B2#I}(B
+  // height : $B=DI}(B
+  // title : $B%?%$%H%k(B
   explicit App(int width, int height, const char* title);
   App(const App& src) = delete;
   ~App();
   
-  // windowが開いているかどうか
+  // window$B$,3+$$$F$$$k$+$I$&$+(B
   bool isOpen();
   
-  // 描画できるようにする
+  // $BIA2h$G$-$k$h$&$K$9$k(B
   void letsStart();
   
-  // 背景色を設定
+  // $BGX7J?'$r@_Dj(B
   void setClearColor(float r, float g, float b);
   void setClearColor(const Color& color);
   
